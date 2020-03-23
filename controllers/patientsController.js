@@ -3,7 +3,7 @@ var patients = require('../data/patients')
 
 function patientsController(req, res) {
     var patientID = req.params.patientID
-    var patient = patients[patientID]
+    var patient = patients[patientID-1]
     res.json(patient)
 }
 
